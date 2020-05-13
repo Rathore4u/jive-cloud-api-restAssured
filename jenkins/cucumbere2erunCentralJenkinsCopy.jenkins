@@ -1,0 +1,32 @@
+pipeline {
+    agent {
+    label 'jdk8'
+    }
+    tools {
+            maven 'maven-3.1.1'
+            jdk 'default_jdk'
+        }
+    stages {
+        stage ('Initialize') {
+            steps {
+                sh '''
+                    echo "PATH = ${PATH}"
+                    echo "M2_HOME = ${M2_HOME}"
+                '''
+            }
+        }
+
+        stage ('Build') {
+            steps {
+                sh 'mvn clean generate-sources'
+                sh 'mvn clean test'
+                }
+                }
+    }
+    post  {
+        always  {
+            allure includeProperties: false, jdk: '', results: [[path: 'allure-results']]
+            junit 'target/surefire-reports/**/*.xml'
+        }
+    }
+}

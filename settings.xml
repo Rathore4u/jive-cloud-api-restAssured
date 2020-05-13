@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<settings>
+    <!-- <mirrors>
+         <mirror>
+             <id>nexus-server</id>
+             <mirrorOf>*</mirrorOf>
+             <url>https://nexus.devfactory.com/repository/jive-public/</url>
+         </mirror>
+     </mirrors> -->
+    <profiles>
+        <profile>
+            <id>nexus</id>
+            <repositories>
+                <repository>
+                    <id>central</id>
+                    <url>http://central</url>
+                    <releases><enabled>true</enabled></releases>
+                    <snapshots><enabled>true</enabled></snapshots>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>central</id>
+                    <url>http://central</url>
+                    <releases><enabled>true</enabled></releases>
+                    <snapshots><enabled>true</enabled></snapshots>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>
+    </profiles>
+</settings>
