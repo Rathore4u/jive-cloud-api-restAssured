@@ -1,0 +1,7 @@
+# The default environment settings.
+# To support test execution on multi environment, Create a new file with name = application.{environment name}.yml
+# example: application.stage.yml for "stage" environment
+api:
+  baseUrl: "https://banzai-2019-2-2-1-2b60a79-21.jivelandia.com/"
+restAssuredSettings:
+  debugMode: "true"

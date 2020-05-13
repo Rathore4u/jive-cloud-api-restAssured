@@ -1,0 +1,7 @@
+# Define users credentials in the default environment
+# To support test execution on multi environment, Create a new file with name {environment name}-config.yml.
+# example: "stage-config.yml" for stage env.
+users:
+  ADMIN:
+    password: admin
+    username: admin

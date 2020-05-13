@@ -1,0 +1,10 @@
+# Define users credentials in stage environment
+#users:
+#  ADMIN:
+#    id: 1
+#    password: admin
+#    username: admin@test.com
+#  MANAGER:
+#    id: 0
+#    password: admin
+#    username: admin@test.com

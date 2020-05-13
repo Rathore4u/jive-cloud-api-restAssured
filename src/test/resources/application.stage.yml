@@ -1,0 +1,6 @@
+# Stage environment settings.
+api:
+  baseUrl: "https://banzai-2019-2-2-1-2b60a79-21.jivelandia.com/"
+restAssuredSettings:
+  debugMode: "true"
+
